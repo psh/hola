@@ -16,16 +16,19 @@
  * You should have received a copy of the GNU General Public License
  * along with Hola.  If not, see <http://www.gnu.org/licenses/>.
  */
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-    }
-}
 
-allprojects {
-    repositories {
-        jcenter()
-    }
+package net.straylightlabs.hola;
+
+
+import net.straylightlabs.hola.dns.*;
+import net.straylightlabs.hola.sd.InstanceTest;
+import net.straylightlabs.hola.sd.ServiceTest;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+
+@RunWith(Suite.class)
+@Suite.SuiteClasses({ARecordTest.class, AaaaRecordTest.class, DomainTest.class, InstanceTest.class,
+        PtrRecordTest.class, QuestionTest.class, RecordTest.class, ResponseTest.class, ServiceTest.class,
+        SrvRecordTest.class, TxtRecordTest.class})
+public class TestSuite {
 }

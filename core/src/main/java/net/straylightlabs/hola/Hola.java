@@ -16,16 +16,10 @@
  * You should have received a copy of the GNU General Public License
  * along with Hola.  If not, see <http://www.gnu.org/licenses/>.
  */
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-    }
-}
 
-allprojects {
-    repositories {
-        jcenter()
-    }
+package net.straylightlabs.hola;
+
+@SuppressWarnings("unused")
+public class Hola {
+    public final static String VERSION = "0.2.2";
 }

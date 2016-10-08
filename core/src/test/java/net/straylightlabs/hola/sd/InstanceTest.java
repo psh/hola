@@ -16,16 +16,17 @@
  * You should have received a copy of the GNU General Public License
  * along with Hola.  If not, see <http://www.gnu.org/licenses/>.
  */
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-    }
-}
 
-allprojects {
-    repositories {
-        jcenter()
+package net.straylightlabs.hola.sd;
+
+import org.junit.Test;
+
+public class InstanceTest {
+    @Test
+    public void testInstanceCreation() {
+//        Response response = ResponseTest.buildResponse();
+//        Instance instance = Instance.createFrom(response);
+//
+//        assertTrue("instance != null", instance != null);
     }
 }
